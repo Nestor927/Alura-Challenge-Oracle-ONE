@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+<body>
+    <main>
+        <section class="parte1">
+            
+            <h1 class="logo"><img class="logo" src="img/Vector.svg" alt="logo"></h1>
+            
+            <!-- <form class="formulario"> -->
+            <div class="textArea">
+                <textarea class="input-text"  autofocus  placeholder="Ingrese el texto aqui" cols="30"></textarea>
+            </div>
+            
+            <div class="control">
+                <div class="advertencia">
+                
+                    <h6><img class="signo" src="img/Vector!.svg" alt="advertencia">Solo letras minusculas y sin acentos </h6>
+                </div> 
+                <div class="botones">
+                    <button type="button" onclick="btnencriptar(); mostrar();">Encriptar</button>
+                    <button type="button" onclick="btndesencriptar(); mostrar();">Desencriptar</button>
+                </div>
+                
+            </div>    
+            
+        </section>        
+            
+        <section class="parte2">
+            <div class="info" id="info">
+                <div class="imagen">
+                    <img src="img/Muñeco.svg" alt="munieco">
+                </div>
+                <div class="info2">
+                    <p class="aviso">Ningun mensaje fue encontrado
+                    </p>    
+                    <br>
+                    <p class="aviso1">Ingrese el texto que desea encriptar/ desencriptar
+                    </p>
+                </div>
+            </div> 
+            <div id="salida" class="salida">
+                <button id="btn" class="copiar"><img class="arrow" src="img/down-arrow-svgrepo-com.svg" alt="">Copiar </button>
+                <!-- <input type="button" id="btn" class="copiar"  value="copiar" /> -->
+            
+                <textarea id="textArea" class="output-text" ></textarea>
+                
+            </div> 
+            
+        </section>
+    </main>
+</body>
+<script src="js/script.js"></script>
+</html>
